@@ -1,0 +1,38 @@
+@use '../../variables' as *;
+
+.cs-panel {
+  display: none;
+  flex-wrap: wrap;
+  gap: 7px;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 1300px;
+  padding: 11px 14px;
+  background: #fff;
+  border: 2px solid $color-border;
+  border-radius: 8px;
+
+  &.open {
+    display: flex;
+  }
+}
+
+.cl {
+  font-size: 13px;
+  color: #333;
+  background: #fff;
+  border: 2px solid $color-border;
+  border-radius: 6px;
+  padding: 7px 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  .cl-line {
+    width: 26px;
+    height: 3px;
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+}

@@ -1,0 +1,169 @@
+@use '../../variables' as *;
+
+.matrix-wrap {
+  width: 100%;
+  max-width: 1300px;
+  background: transparent;
+  overflow: auto;
+  max-height: calc(100vh - 160px);
+  padding: 0 6px;
+}
+
+.mtbl {
+  border-collapse: collapse;
+  width: 100%;
+
+  th {
+    background: #f3f5fa;
+    font-weight: 700;
+    font-size: 12px;
+    border: 1px solid #dde1ea;
+    padding: 6px 8px;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .rh {
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid #dde1ea;
+    padding: 5px 10px;
+    position: sticky;
+    left: 0;
+    background: #fff;
+    z-index: 1;
+    min-width: 175px;
+    white-space: nowrap;
+    transition: background 0.12s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  td {
+    border: 1px solid #dde1ea;
+    padding: 4px 6px;
+    text-align: center;
+    font-size: 12px;
+    transition: background 0.12s;
+  }
+
+  .sys-row {
+    cursor: pointer;
+
+    &:hover td,
+    &:hover .rh {
+      background: #eef2ff !important;
+    }
+
+    &.mat-active td,
+    &.mat-active .rh {
+      background: $color-primary-light !important;
+    }
+
+    &.mat-active .rh {
+      border-left-width: 4px;
+    }
+  }
+}
+
+.cat-header {
+  font-weight: 800;
+  font-size: 12px;
+  padding: 8px 16px;
+  letter-spacing: 0.6px;
+  border: 1px solid #dde1ea;
+}
+
+.ticks-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 1px;
+  margin-right: 5px;
+}
+
+.arr-icon {
+  font-size: 10px;
+  color: #bbb;
+  margin-left: 6px;
+}
+
+.cat-cell {
+  text-align: center;
+  padding: 8px 12px;
+}
+
+.cat-badge {
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 3px 9px;
+  white-space: nowrap;
+}
+
+.type-cell {
+  text-align: left;
+  padding: 7px 10px;
+}
+
+.type-badge {
+  font-size: 10.5px;
+  font-weight: 700;
+  border: 1.5px solid;
+  border-radius: 5px;
+  padding: 2px 7px;
+  display: inline-block;
+  margin: 1px 2px;
+  white-space: nowrap;
+}
+
+.count-cell {
+  text-align: center;
+  font-weight: 800;
+  font-size: 15px;
+  color: #555;
+}
+
+.sub-grid-wrap {
+  background: #f8f9ff;
+}
+
+.sub-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  padding: 10px 12px;
+}
+
+.sub-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  background: #fff;
+  border: 1.5px solid $color-border;
+  border-radius: 6px;
+  padding: 5px 8px;
+  font-size: 12px;
+  transition: border-color 0.1s, background 0.1s;
+
+  &:hover {
+    border-color: #aaa;
+  }
+}
+
+.sub-name {
+  font-weight: 600;
+  font-size: 12px;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-primary !important;
+  }
+}

@@ -1,0 +1,23 @@
+@use '../../variables' as *;
+
+.canvas-wrap {
+  background: transparent;
+  border-radius: 0;
+  width: 100%;
+  max-width: none;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+
+  svg {
+    text {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      pointer-events: none;
+    }
+
+    .node-g {
+      cursor: pointer;
+    }
+  }
+}

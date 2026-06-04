@@ -1,0 +1,98 @@
+@use '../../variables' as *;
+
+.topbar-wrap {
+  width: 100%;
+  max-width: 1300px;
+}
+
+.top-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 6px;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.top-bar-sep {
+  display: inline-block;
+  width: 1px;
+  height: 28px;
+  background: $color-border;
+  margin: 0 4px;
+}
+
+.vbtn {
+  border: 2px solid $color-border;
+  background: $color-bg-light;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 1;
+  font-family: inherit;
+  font-weight: 600;
+  color: $color-text-muted;
+  transition: border-color 0.12s, background 0.12s;
+
+  &.active {
+    border-color: $color-primary;
+    background: $color-primary-light;
+    color: $color-primary-dark;
+  }
+
+  &:not(.active):hover {
+    border-color: $color-border;
+    background: $color-bg-light;
+    cursor: pointer;
+  }
+
+  &.db-btn {
+    font-size: 12px;
+    padding: 7px 13px;
+    border-color: $color-ops;
+    color: $color-ops;
+    background: #fffbee;
+
+    &:hover {
+      background: #fef9dc;
+    }
+  }
+}
+
+.cs-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: $color-text-muted;
+  background: #fff;
+  border: 2px solid $color-border;
+  border-radius: 6px;
+  padding: 7px 14px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: border-color 0.12s, background 0.12s;
+
+  &.open {
+    border-color: $color-primary;
+    background: $color-primary-light;
+    color: $color-primary-dark;
+  }
+
+  &:hover {
+    border-color: #aaa;
+  }
+
+  .cs-arr {
+    font-size: 10px;
+    transition: transform 0.15s;
+    display: inline-block;
+  }
+
+  &.open .cs-arr {
+    transform: rotate(180deg);
+  }
+}
