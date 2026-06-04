@@ -1,31 +1,31 @@
 import { X } from './constants.js';
 
 export const systems = [
-  { id: 'meis',       num: 1,  lines: ['MEİS'],                                       color: 'meis',    x: X.meis,        y: 38,
+  { id: 'meis',       num: 1,  lines: ['MEİS'],                                       color: 'meis',    x: X.meis,        y: 52,
     label: 'MEİS — Mərkəzləşdirilmiş Elektron İnformasiya Sistemi',
     desc: 'Bütün sistemlər üçün vahid istifadəçi idarəetməsi, autentifikasiya, giriş nəzarəti, audit mexanizmləri və köməkçi funksionallıqları özündə ehtiva edən mərkəzi platform.' },
 
-  { id: 'api',        num: 2,  lines: ['İnteqrasiya', 'Platforması (API/ESB)'],        color: 'tech',    x: X.tech,        y: 113,
+  { id: 'api',        num: 2,  lines: ['İnteqrasiya', 'Platforması (API/ESB)'],        color: 'tech',    x: X.tech,        y: 133,
     label: 'İnteqrasiya Platforması (API/ESB)',
     desc: 'Daxili və xarici sistemlər arasında standartlaşdırılmış, təhlükəsiz məlumat mübadiləsini təmin edən inteqrasiya infrastrukturu.' },
 
-  { id: 'bi',         num: 3,  lines: ['Mərkəzi Analitika', '(BI Paneli)'],           color: 'tech',    x: X.tech,        y: 169,
+  { id: 'bi',         num: 3,  lines: ['Mərkəzi Analitika', '(BI Paneli)'],           color: 'tech',    x: X.tech,        y: 189,
     label: 'Mərkəzi Analitika və İdarəetmə Paneli (BI)',
     desc: 'KPI-lar, analitik hesabatlar, layihə dashboardları — real vaxt rejimində rəhbərlik üçün vizuallaşdırma platforması.' },
 
-  { id: 'dw',         num: 4,  lines: ['Məlumat Anbarı', '(Data Warehouse)'],         color: 'tech',    x: X.tech,        y: 225,
+  { id: 'dw',         num: 4,  lines: ['Məlumat Anbarı', '(Data Warehouse)'],         color: 'tech',    x: X.tech,        y: 245,
     label: 'Məlumat Anbarı (Data Warehouse)',
     desc: 'Müxtəlif mənbələrdən məlumatların inteqrasiyası, tarixçə üzrə saxlanması, analitik emal üçün strukturlaşdırılmış mərkəzi məlumat platforması.' },
 
-  { id: 'notify',     num: 5,  lines: ['Bildiriş', 'Kommunikasiya Xidməti'],          color: 'tech',    x: X.tech,        y: 281,
+  { id: 'notify',     num: 5,  lines: ['Bildiriş', 'Kommunikasiya Xidməti'],          color: 'tech',    x: X.tech,        y: 301,
     label: 'Bildiriş və Kommunikasiya Xidməti',
     desc: 'SMS, e-mail və digər kanallar vasitəsilə avtomatlaşdırılmış bildirişlər: hadisələr, xəbərdarlıqlar, proses yeniləmələri.' },
 
-  { id: 'storage',    num: 6,  lines: ['Fayl və Sənəd', 'Saxlama Xidməti'],           color: 'tech',    x: X.tech,        y: 337,
+  { id: 'storage',    num: 6,  lines: ['Fayl və Sənəd', 'Saxlama Xidməti'],           color: 'tech',    x: X.tech,        y: 357,
     label: 'Mərkəzləşdirilmiş Fayl və Sənəd Saxlama Xidməti',
     desc: 'Bütün sistemlər üzrə sənədlər, fayllar, media: saxlanma, versiyalaşdırma, API idarəetmə.' },
 
-  { id: 'mobile',     num: 7,  lines: ['Mobil Sahə', 'Əməliyyatları Platforması'],    color: 'tech',    x: X.tech,        y: 393,
+  { id: 'mobile',     num: 7,  lines: ['Mobil Sahə', 'Əməliyyatları Platforması'],    color: 'tech',    x: X.tech,        y: 413,
     label: 'Mobil Sahə Əməliyyatları Platforması',
     desc: 'Sahə əməkdaşlarının mobil cihazla məlumat toplaması, tapşırıq icrası, real vaxt sinxronizasiyası.' },
 

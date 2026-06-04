@@ -36,7 +36,9 @@ export default function App() {
 
   function handleSelectSystem(id) {
     selectSystem(id);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (view !== 'mat') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   }
 
   async function handleSave(id) {

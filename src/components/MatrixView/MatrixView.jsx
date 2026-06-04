@@ -24,7 +24,7 @@ function TicksDisplay({ sysId }) {
   return (
     <span className="ticks-wrap">
       {tkArr.map((c, i) => (
-        <span key={i} style={{ color: c === 'g' ? TICK_GREEN : TICK_GREY, fontWeight: 900, fontSize: 13 }}>✓</span>
+        <span key={i} style={{ color: (c === 'g' || tkStr === 'gb') ? TICK_GREEN : TICK_GREY, fontWeight: 900, fontSize: 15 }}>✓</span>
       ))}
     </span>
   );
@@ -76,7 +76,7 @@ export default function MatrixView({ onSelectSystem, activeId }) {
                     <tr
                       key={sid}
                       className={`sys-row${isActive ? ' mat-active' : ''}`}
-                      onClick={() => toggleRow(sid)}
+                      onClick={() => { toggleRow(sid); onSelectSystem(sid); }}
                     >
                       {/* Name cell */}
                       <td className="rh" style={{ borderLeft: `4px solid ${cl.stroke}` }} title={SYSDESC[sid] || s.label}>

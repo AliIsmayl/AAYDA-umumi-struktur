@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import { systems } from '../../data/systems.js';
 import { connections } from '../../data/connections.js';
 import { COLORS, ROLES } from '../../data/constants.js';
@@ -21,10 +21,7 @@ function getConnected(id) {
 }
 
 export default function InfoPanel({ activeId, onSelectSystem, sysproject, onSave, onScheduleSave }) {
-  const [marked, setMarked] = useState(false);
   const [connExpanded, setConnExpanded] = useState(true);
-  const [dbMsg, setDbMsg] = useState('');
-  const dbMsgTimer = useRef(null);
 
   if (!activeId) {
     return (
@@ -43,23 +40,6 @@ export default function InfoPanel({ activeId, onSelectSystem, sysproject, onSave
   const hasFT = !!proj.ft;
   const hasProto = !!proj.proto;
   const { all: allConns } = getConnected(activeId);
-
-  function showDbMsg(msg, color) {
-    setDbMsg({ text: msg, color: color || '#16A97A' });
-    clearTimeout(dbMsgTimer.current);
-    dbMsgTimer.current = setTimeout(() => setDbMsg(''), 2200);
-  }
-
-  async function handleSave() {
-    if (onSave) {
-      try {
-        await onSave(activeId);
-        showDbMsg('✓ Saxlanıldı');
-      } catch {
-        showDbMsg('Xəta', '#E05A2B');
-      }
-    }
-  }
 
   function handleFtClick() {
     if (hasFT) {
@@ -80,15 +60,11 @@ export default function InfoPanel({ activeId, onSelectSystem, sysproject, onSave
       {/* Main */}
       <div className="info-main">
         <div className="info-main-top">
-          <strong className="info-title" style={{ color: cl.text }}>{s.label}</strong>
+          <strong className="info-title" style={{ color: cl.text }}>
+            <span style={{ color: '#999', fontWeight: 700, fontSize: 13, marginRight: 6 }}>#{s.num}</span>
+            {s.label}
+          </strong>
           <div className="info-logo-slot" />
-          <button
-            className={`iact mark-btn${marked ? ' marked' : ''}`}
-            title="İşarələ"
-            onClick={() => setMarked(m => !m)}
-          >
-            {marked ? '✓' : '☐'}
-          </button>
         </div>
 
         <div className="info-desc">{sysDesc}</div>
@@ -127,14 +103,7 @@ export default function InfoPanel({ activeId, onSelectSystem, sysproject, onSave
 
       {/* Dates panel */}
       <div className="info-dates">
-        <div className="is-hd">
-          Tarixlər
-          {dbMsg && (
-            <span className="db-status-badge" style={{ color: dbMsg.color }}>
-              {dbMsg.text}
-            </span>
-          )}
-        </div>
+        <div className="is-hd">Tarixlər</div>
         <div className="is-row">
           <span className="is-lbl">Başlanma</span>
           <input
@@ -165,12 +134,6 @@ export default function InfoPanel({ activeId, onSelectSystem, sysproject, onSave
             defaultValue={proj.ftDeadline || ''}
           />
         </div>
-        <button
-          className="is-nav save-btn"
-          onClick={handleSave}
-        >
-          ✓ Saxla
-        </button>
       </div>
 
       {/* Meta panel */}

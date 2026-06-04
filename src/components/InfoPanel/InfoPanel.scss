@@ -137,13 +137,14 @@
 }
 
 .info-conn-chip {
-  font-size: 10.5px;
+  font-size: 13px;
   font-weight: 600;
-  padding: 3px 9px;
+  padding: 4px 10px;
   border-radius: 6px;
   cursor: pointer;
   border: 1.5px solid;
   line-height: 1.4;
+  white-space: nowrap;
   transition: opacity 0.1s, transform 0.08s;
 
   &:hover {

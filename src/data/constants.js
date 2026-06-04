@@ -30,7 +30,7 @@ export const ROLES = [
 ];
 
 export const NW = 155;
-export const NH = 40;
+export const NH = 42;
 
 export const X = {
   meis: 101,
