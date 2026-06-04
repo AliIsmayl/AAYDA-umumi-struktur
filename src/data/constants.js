@@ -30,7 +30,7 @@ export const ROLES = [
 ];
 
 export const NW = 155;
-export const NH = 42;
+export const NH = 52;
 
 export const X = {
   meis: 101,
@@ -49,29 +49,29 @@ export const CY_RAD = 600;
 export const radialAngles = {
   meis: 0,
   api: 0, bi: 60, dw: 120, notify: 180, storage: 240, mobile: 300,
-  esened: 0, halga: 45, task: 90, hr: 135, arxiv: 180, vasite: 225, budce: 270, audit: 315,
+  esened: 0, halga: 36, task: 72, hr: 108, arxiv: 144, vasite: 180, budce: 216, audit: 252, evisit: 288, sitem: 324,
   reyestr: 240,
-  toll: 0, neqliyyat: 33, tikinti: 66, monitorinq: 99, istisman: 132,
-  tehlu: 165, ekologiya: 198, icaze: 231, komm: 264, yolknar: 297, torpaq: 330,
+  toll: 0, neqliyyat: 30, tikinti: 60, monitorinq: 90, istisman: 120,
+  tehlu: 150, ekologiya: 180, icaze: 210, komm: 240, yolknar: 270, torpaq: 300, primavera: 330,
   mygov: 0, odenis: 60, xerite: 120, mehdudat: 180, portal: 240, chatbot: 300,
 };
 
 export const radRing = {
   meis: 'meis',
   api: 'tech', bi: 'tech', dw: 'tech', notify: 'tech', storage: 'tech', mobile: 'tech',
-  esened: 'corp', halga: 'corp', task: 'corp', hr: 'corp', arxiv: 'corp', vasite: 'corp', budce: 'corp', audit: 'corp',
+  esened: 'corp', halga: 'corp', task: 'corp', hr: 'corp', arxiv: 'corp', vasite: 'corp', budce: 'corp', audit: 'corp', evisit: 'corp', sitem: 'corp',
   reyestr: 'reg',
   toll: 'ops', neqliyyat: 'ops', tikinti: 'ops', monitorinq: 'ops', istisman: 'ops', tehlu: 'ops',
-  ekologiya: 'ops', icaze: 'ops', komm: 'ops', yolknar: 'ops', torpaq: 'ops',
+  ekologiya: 'ops', icaze: 'ops', komm: 'ops', yolknar: 'ops', torpaq: 'ops', primavera: 'ops',
   mygov: 'citizen', odenis: 'citizen', xerite: 'citizen', mehdudat: 'citizen', portal: 'citizen', chatbot: 'citizen',
 };
 
 export const MATRIX_CATS = [
   { label: 'MEİS',                  color: '#7C6EF5', ids: ['meis'] },
   { label: 'Texnoloji Platforma',   color: '#16A97A', ids: ['api','bi','dw','notify','storage','mobile'] },
-  { label: 'Korporativ İdarəetmə',  color: '#E05A2B', ids: ['esened','halga','task','hr','arxiv','vasite','budce','audit'] },
+  { label: 'Korporativ İdarəetmə',  color: '#E05A2B', ids: ['esened','halga','task','hr','arxiv','vasite','budce','audit','evisit','sitem'] },
   { label: 'Reyestr',               color: '#A855C8', ids: ['reyestr'] },
-  { label: 'Əməliyyat Sistemləri',  color: '#D4960A', ids: ['toll','neqliyyat','tikinti','monitorinq','istisman','tehlu','icaze','komm','yolknar','torpaq','ekologiya'] },
+  { label: 'Əməliyyat Sistemləri',  color: '#D4960A', ids: ['toll','neqliyyat','tikinti','monitorinq','istisman','tehlu','icaze','komm','yolknar','torpaq','ekologiya','primavera'] },
   { label: 'Vətəndaş İnterfeysi',   color: '#2D8FE0', ids: ['mygov','odenis','xerite','mehdudat','portal','chatbot'] },
 ];
 

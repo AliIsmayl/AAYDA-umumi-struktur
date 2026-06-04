@@ -20,8 +20,8 @@ const TICK_ITEMS = [
     icon: (
       <span className="tick-icon">
         <svg width="28" height="14" viewBox="0 0 28 14" fill="none">
-          <path d="M1 7L4.5 11L13 2.5"   stroke={TICK_GREEN} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M14.5 7L18 11L26.5 2.5" stroke={TICK_GREEN} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M1 7L4.5 11L13 2.5"     stroke={TICK_GREEN} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M14.5 7L18 11L26.5 2.5" stroke={TICK_GREY}  strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </span>
     ),

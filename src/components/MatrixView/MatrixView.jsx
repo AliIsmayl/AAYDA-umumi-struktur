@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { systems } from '../../data/systems.js';
 import { connections } from '../../data/connections.js';
 import { COLORS, MATRIX_CATS, CONN_TYPES_LABELS } from '../../data/constants.js';
-import { SYS_TICK, TICK_GREEN, TICK_GREY } from '../../data/ticks.js';
+import { SYS_TICK, TICK_LABELS, TICK_GREEN, TICK_GREY } from '../../data/ticks.js';
 import { SYSDESC } from '../../data/sysdesc.js';
 import './MatrixView.scss';
 
@@ -18,14 +18,40 @@ function getConnData(sid) {
   return { connTypes, allConn };
 }
 
+function TickIcon({ tkStr }) {
+  if (tkStr === 'gg') return (
+    <svg width="13" height="12" viewBox="0 0 13 12" fill="none">
+      <path d="M1.5 6L4.5 9.5L11.5 1.5" stroke={TICK_GREEN} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+  if (tkStr === 'gb') return (
+    <svg width="24" height="12" viewBox="0 0 24 12" fill="none">
+      <path d="M1 6L4 9.5L11 1.5"  stroke={TICK_GREEN} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M13 6L16 9.5L23 1.5" stroke={TICK_GREY}  strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+  if (tkStr === 'bb') return (
+    <svg width="12" height="13" viewBox="0 0 14 16" fill="none">
+      <path d="M1.5 1.5H8.5L12.5 5.5V14.5H1.5V1.5Z" stroke="#9CA3AF" strokeWidth="1.5" strokeLinejoin="round" />
+      <path d="M8.5 1.5V5.5H12.5"                    stroke="#9CA3AF" strokeWidth="1.5" strokeLinejoin="round" />
+      <path d="M3.5 8H10.5M3.5 10.5H10.5M3.5 13H7.5" stroke="#9CA3AF" strokeWidth="1.2" strokeLinecap="round" />
+    </svg>
+  );
+  if (tkStr === 'b') return (
+    <svg width="12" height="13" viewBox="0 0 14 16" fill="none">
+      <rect x="1.5" y="2" width="4" height="12" rx="1.5" fill="#9CA3AF" />
+      <rect x="8.5" y="2" width="4" height="12" rx="1.5" fill="#9CA3AF" />
+    </svg>
+  );
+  return null;
+}
+
 function TicksDisplay({ sysId }) {
-  const tkStr = SYS_TICK[sysId] || 'b';
-  const tkArr = tkStr === '0' ? [] : tkStr.split('');
+  const tkStr = SYS_TICK[sysId];
+  if (!tkStr || tkStr === '0') return null;
   return (
-    <span className="ticks-wrap">
-      {tkArr.map((c, i) => (
-        <span key={i} style={{ color: (c === 'g' || tkStr === 'gb') ? TICK_GREEN : TICK_GREY, fontWeight: 900, fontSize: 15 }}>✓</span>
-      ))}
+    <span className="ticks-wrap" title={TICK_LABELS[tkStr]}>
+      <TickIcon tkStr={tkStr} />
     </span>
   );
 }

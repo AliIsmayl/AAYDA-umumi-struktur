@@ -15,7 +15,7 @@ export default function ZoneBackgrounds({ visible }) {
         fontWeight="700" fill="#16A97A" letterSpacing="1">TEXNOLOJI PLATFORMA</text>
 
       {/* Corporate zone */}
-      <rect x="203" y="12" width="175" height="470" rx="14"
+      <rect x="203" y="12" width="175" height="582" rx="14"
         fill="#FEF3EE" stroke="#E05A2B" strokeWidth="1" strokeDasharray="5,4" />
       <text x="290" y="32" textAnchor="middle" fontSize="10"
         fontWeight="700" fill="#E05A2B" letterSpacing="1">KORPORATİV İDARƏETMƏ</text>

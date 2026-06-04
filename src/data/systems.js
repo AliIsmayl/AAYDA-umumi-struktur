@@ -5,61 +5,69 @@ export const systems = [
     label: 'MEİS — Mərkəzləşdirilmiş Elektron İnformasiya Sistemi',
     desc: 'Bütün sistemlər üçün vahid istifadəçi idarəetməsi, autentifikasiya, giriş nəzarəti, audit mexanizmləri və köməkçi funksionallıqları özündə ehtiva edən mərkəzi platform.' },
 
-  { id: 'api',        num: 2,  lines: ['İnteqrasiya', 'Platforması (API/ESB)'],        color: 'tech',    x: X.tech,        y: 133,
+  { id: 'api',        num: 2,  lines: ['İnteqrasiya', 'Platforması (API/ESB)'],        color: 'tech',    x: X.tech,        y: 145,
     label: 'İnteqrasiya Platforması (API/ESB)',
     desc: 'Daxili və xarici sistemlər arasında standartlaşdırılmış, təhlükəsiz məlumat mübadiləsini təmin edən inteqrasiya infrastrukturu.' },
 
-  { id: 'bi',         num: 3,  lines: ['Mərkəzi Analitika', '(BI Paneli)'],           color: 'tech',    x: X.tech,        y: 189,
+  { id: 'bi',         num: 3,  lines: ['Mərkəzi Analitika', '(BI Paneli)'],           color: 'tech',    x: X.tech,        y: 201,
     label: 'Mərkəzi Analitika və İdarəetmə Paneli (BI)',
     desc: 'KPI-lar, analitik hesabatlar, layihə dashboardları — real vaxt rejimində rəhbərlik üçün vizuallaşdırma platforması.' },
 
-  { id: 'dw',         num: 4,  lines: ['Məlumat Anbarı', '(Data Warehouse)'],         color: 'tech',    x: X.tech,        y: 245,
+  { id: 'dw',         num: 4,  lines: ['Məlumat Anbarı', '(Data Warehouse)'],         color: 'tech',    x: X.tech,        y: 257,
     label: 'Məlumat Anbarı (Data Warehouse)',
     desc: 'Müxtəlif mənbələrdən məlumatların inteqrasiyası, tarixçə üzrə saxlanması, analitik emal üçün strukturlaşdırılmış mərkəzi məlumat platforması.' },
 
-  { id: 'notify',     num: 5,  lines: ['Bildiriş', 'Kommunikasiya Xidməti'],          color: 'tech',    x: X.tech,        y: 301,
+  { id: 'notify',     num: 5,  lines: ['Bildiriş', 'Kommunikasiya Xidməti'],          color: 'tech',    x: X.tech,        y: 313,
     label: 'Bildiriş və Kommunikasiya Xidməti',
     desc: 'SMS, e-mail və digər kanallar vasitəsilə avtomatlaşdırılmış bildirişlər: hadisələr, xəbərdarlıqlar, proses yeniləmələri.' },
 
-  { id: 'storage',    num: 6,  lines: ['Fayl və Sənəd', 'Saxlama Xidməti'],           color: 'tech',    x: X.tech,        y: 357,
+  { id: 'storage',    num: 6,  lines: ['Fayl və Sənəd', 'Saxlama Xidməti'],           color: 'tech',    x: X.tech,        y: 369,
     label: 'Mərkəzləşdirilmiş Fayl və Sənəd Saxlama Xidməti',
     desc: 'Bütün sistemlər üzrə sənədlər, fayllar, media: saxlanma, versiyalaşdırma, API idarəetmə.' },
 
-  { id: 'mobile',     num: 7,  lines: ['Mobil Sahə', 'Əməliyyatları Platforması'],    color: 'tech',    x: X.tech,        y: 413,
+  { id: 'mobile',     num: 7,  lines: ['Mobil Sahə', 'Əməliyyatları Platforması'],    color: 'tech',    x: X.tech,        y: 425,
     label: 'Mobil Sahə Əməliyyatları Platforması',
     desc: 'Sahə əməkdaşlarının mobil cihazla məlumat toplaması, tapşırıq icrası, real vaxt sinxronizasiyası.' },
 
-  { id: 'esened',     num: 8,  lines: ['eSənəd'],                                      color: 'corp',    x: X.corp,        y: 60,
+  { id: 'esened',     num: 8,  lines: ['eSənəd'],                                      color: 'corp',    x: X.corp,        y: 58,
     label: 'eSənəd — Elektron Sənəd Dövriyyəsi Sistemi',
     desc: 'Rəsmi sənədlərin yaradılması, razılaşdırılması, elektron imzalanması, dövriyyəsi və arxivləşdirilməsi.' },
 
-  { id: 'halga',      num: 9,  lines: ['halga', '(CRM / Müraciət / Çağrı)'],         color: 'corp',    x: X.corp,        y: 116,
+  { id: 'halga',      num: 9,  lines: ['halga', '(CRM / Müraciət / Çağrı)'],         color: 'corp',    x: X.corp,        y: 112,
     label: 'halga — Vətəndaş Müraciətləri, CRM və Çağrı Mərkəzi',
     desc: 'Vətəndaş müraciətlərinin qəbulu, qeydiyyatı, çağrı mərkəzi funksionallığı ilə genişləndirilmiş CRM sistemi.' },
 
-  { id: 'task',       num: 10, lines: ['Tapşırıqların', 'İdarəetmə (TİS)'],           color: 'corp',    x: X.corp,        y: 172,
+  { id: 'task',       num: 10, lines: ['Tapşırıqların', 'İdarəetmə (TİS)'],           color: 'corp',    x: X.corp,        y: 166,
     label: 'Tapşırıqların İdarəetmə Sistemi (TİS)',
     desc: 'Tapşırıqların planlaşdırılması, məsul şəxslərə yönləndirilməsi, icra statuslarının izlənməsi.' },
 
-  { id: 'hr',         num: 11, lines: ['İnsan Resursları', 'Sistemi'],                 color: 'corp',    x: X.corp,        y: 228,
+  { id: 'hr',         num: 11, lines: ['İnsan Resursları', 'Sistemi'],                 color: 'corp',    x: X.corp,        y: 220,
     label: 'İnsan Resursları Sistemi',
     desc: 'Kadr məlumatları, əmək münasibətləri, işçi heyəti planlaşdırılması və performans izlənməsi.' },
 
-  { id: 'arxiv',      num: 12, lines: ['Elektron Arxiv', 'Sənəd İdarəetmə'],          color: 'corp',    x: X.corp,        y: 284,
+  { id: 'arxiv',      num: 12, lines: ['Elektron Arxiv', 'Sənəd İdarəetmə'],          color: 'corp',    x: X.corp,        y: 274,
     label: 'Elektron Arxiv və Sənəd İntellektual İdarəetmə Sistemi',
     desc: 'Sənədlərin rəqəmsallaşdırılması, OCR tanıması, avtomatik kateqoriyalaşdırma, semantik axtarış.' },
 
-  { id: 'vasite',     num: 13, lines: ['Əsas Vəsaitlər', 'və Anbar Sistemi'],        color: 'corp',    x: X.corp,        y: 340,
+  { id: 'vasite',     num: 13, lines: ['Əsas Vəsaitlər', 'və Anbar Sistemi'],        color: 'corp',    x: X.corp,        y: 328,
     label: 'Əsas Vəsaitlərin və Anbarın İdarəetmə Sistemi',
     desc: 'Avadanlıqlar, materiallar, ehtiyat hissələri: qeydiyyat, anbar yerləşdirməsi, qalıqların real vaxt izlənməsi.' },
 
-  { id: 'budce',      num: 14, lines: ['Büdcə', 'İnvestisiya Planlaşdırma'],          color: 'corp',    x: X.corp,        y: 396,
+  { id: 'budce',      num: 14, lines: ['Büdcə', 'İnvestisiya Planlaşdırma'],          color: 'corp',    x: X.corp,        y: 382,
     label: 'Büdcə və İnvestisiya Planlaşdırma Sistemi',
     desc: 'İnvestisiya əsaslandırması, layihə prioritetləşdirilməsi, büdcə bölgüsü, maliyyə planlaşdırması.' },
 
-  { id: 'audit',      num: 15, lines: ['Audit', 'Uyğunluq Nəzarəti'],                 color: 'corp',    x: X.corp,        y: 452,
+  { id: 'audit',      num: 15, lines: ['Audit', 'Uyğunluq Nəzarəti'],                 color: 'corp',    x: X.corp,        y: 436,
     label: 'Audit və Uyğunluq Nəzarəti Sistemi',
     desc: 'Daxili nəzarət, audit yoxlamaları, normativ tələblərə uyğunluq qiymətləndirməsi, pozuntuların izlənməsi.' },
+
+  { id: 'evisit',     num: 34, lines: ['eVisit'],                                      color: 'corp',    x: X.corp,        y: 490,
+    label: 'eVisit — Elektron Yoxlama və Giriş Sistemi',
+    desc: 'Obyektlərə elektron giriş nəzarəti, ziyarətçi qeydiyyatı, sahə yoxlamalarının planlaşdırılması və nəticələrin izlənməsi.' },
+
+  { id: 'sitem',      num: 35, lines: ['Sitem'],                                       color: 'corp',    x: X.corp,        y: 544,
+    label: 'Sitem — Sistem İdarəetmə Modulu',
+    desc: 'Korporativ sistemlərin inteqrasiyası, idarəetmə proseslərinin avtomatlaşdırılması, sistem resurslarının mərkəzləşdirilmiş monitorinqi.' },
 
   { id: 'reyestr',    num: 16, lines: ['Yol Reyestri', 'Aktivlərin İdarəedilməsi'],   color: 'reg',     x: X.reg,         y: 256,
     label: 'Yol Reyestri və Aktivlərin İdarəedilməsi Sistemi',
@@ -108,6 +116,10 @@ export const systems = [
   { id: 'ekologiya',  num: 27, lines: ['Yaşıllıq', 'Ekoloji İdarəetmə'],             color: 'ops',     x: X.ops + 105,   y: 340,
     label: 'Yaşıllıq və Ekoloji İdarəetmə Modulu',
     desc: 'Yaşıllıq zolaqları, qoruyucu meşə sahələri: məkan uçotu, yaşıllaşdırma planlaşdırma, bərpa-qulluq izlənməsi.' },
+
+  { id: 'primavera',  num: 36, lines: ['PRİMAVERA', 'Layihə İdarəetmə'],             color: 'ops',     x: X.ops,         y: 396,
+    label: 'PRİMAVERA — Layihə İdarəetmə Sistemi',
+    desc: 'Oracle Primavera əsasında yol tikinti və təmir layihələrinin planlaşdırılması, resurs idarəetməsi, cədvəl izlənməsi.' },
 
   { id: 'mygov',      num: 28, lines: ['myGOV', 'Vətəndaş Müraciətləri'],            color: 'citizen', x: X.citizen,     y: 60,
     label: 'myGOV Vətəndaş Müraciətləri eXidməti',

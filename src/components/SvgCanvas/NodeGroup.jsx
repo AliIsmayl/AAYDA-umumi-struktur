@@ -46,8 +46,8 @@ export default function NodeGroup({ sys, pos, isActive, isConnected, isHovered, 
 
   const lineH = isRadial ? 12 : 14;
   const totalH = lines.length * lineH;
-  const badgeOffset = (hasStatus && !isRadial) ? 6 : 0;
-  const startY = p.y - totalH / 2 + lineH * 0.55 + badgeOffset;
+  const badgeOffset = (hasStatus && !isRadial) ? 3 : 0;
+  const startY = p.y - totalH / 2 + lineH * 0.5 + badgeOffset;
 
   return (
     <g
@@ -122,7 +122,7 @@ export default function NodeGroup({ sys, pos, isActive, isConnected, isHovered, 
           y={bgY}
           width={bgW}
           height={bgH}
-          rx="3"
+          rx="1"
           fill="#fff"
           opacity="0.92"
         />

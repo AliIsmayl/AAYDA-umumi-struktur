@@ -18,7 +18,7 @@ export const SYSPROJECT = {
   audit:      { start: '2022-10-01', deadline: '2025-12-31', ft: '2024-01-01',   ftDeadline: '2025-09-30', proto: ''                               },
   reyestr:    { start: '2021-01-15', deadline: '2025-12-31', ft: '2022-12-01',   ftDeadline: '2025-06-30', proto: 'https://yol-reyestri.netlify.app/' },
   toll:       { start: '2021-07-01', deadline: '2025-06-30', ft: '2023-01-01',   ftDeadline: '2025-03-31', proto: ''                               },
-  neqliyyat:  { start: '2022-03-01', deadline: '2026-06-30', ft: null,           ftDeadline: null,          proto: ''                               },
+  neqliyyat:  { start: '2022-03-01', deadline: '2026-06-30', ft: '2023-06-01',   ftDeadline: '2026-03-31', proto: ''                               },
   tikinti:    { start: '2022-09-01', deadline: '2026-12-31', ft: null,           ftDeadline: null,          proto: ''                               },
   monitorinq: { start: '2023-01-01', deadline: '2026-09-30', ft: null,           ftDeadline: null,          proto: ''                               },
   istisman:   { start: '2022-07-01', deadline: '2026-06-30', ft: null,           ftDeadline: null,          proto: ''                               },
@@ -34,4 +34,7 @@ export const SYSPROJECT = {
   mehdudat:   { start: '2023-02-01', deadline: '2026-12-31', ft: null,           ftDeadline: null,          proto: ''                               },
   portal:     { start: '2021-12-01', deadline: '2025-12-31', ft: '2023-08-01',   ftDeadline: '2025-09-30', proto: ''                               },
   chatbot:    { start: '2023-11-01', deadline: '2027-03-31', ft: null,           ftDeadline: null,          proto: ''                               },
+  evisit:     { start: null,        deadline: null,          ft: null,           ftDeadline: null,          proto: ''                               },
+  sitem:      { start: null,        deadline: null,          ft: null,           ftDeadline: null,          proto: ''                               },
+  primavera:  { start: null,        deadline: null,          ft: null,           ftDeadline: null,          proto: ''                               },
 };

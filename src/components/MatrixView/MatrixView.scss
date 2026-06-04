@@ -6,7 +6,7 @@
   background: transparent;
   overflow: auto;
   max-height: calc(100vh - 160px);
-  padding: 0 6px 24px;
+  padding: 0 6px 40px;
 }
 
 .mtbl {
@@ -77,7 +77,7 @@
 .cat-header {
   font-weight: 800;
   font-size: 13px;
-  padding: 8px 16px;
+  padding: 20px 16px 8px;
   letter-spacing: 0.6px;
   border: 1px solid #dde1ea;
   text-align: left !important;
@@ -109,7 +109,7 @@
   white-space: nowrap;
 }
 
-.type-cell {
+.mtbl .type-cell {
   text-align: left;
   padding: 7px 10px;
 }

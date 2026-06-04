@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { systems } from '../../data/systems.js';
 import { connections } from '../../data/connections.js';
 import { COLORS, ROLES } from '../../data/constants.js';
@@ -23,6 +23,10 @@ function getConnected(id) {
 export default function InfoPanel({ activeId, onSelectSystem, sysproject, onSave, onScheduleSave }) {
   const [connExpanded, setConnExpanded] = useState(true);
 
+  useEffect(() => {
+    setConnExpanded(true);
+  }, [activeId]);
+
   if (!activeId) {
     return (
       <div className="info-panel empty-info">
@@ -35,14 +39,26 @@ export default function InfoPanel({ activeId, onSelectSystem, sysproject, onSave
   if (!s) return null;
 
   const cl = COLORS[s.color];
+  const TECH_IDS = ['api', 'bi', 'dw', 'notify', 'storage', 'mobile'];
+  const isTech = TECH_IDS.includes(activeId);
+  const LOGOS = { evisit: '/logos/evisit-logo.svg', halga: '/logos/halga-logo.svg' };
   const sysDesc = SYSDESC[activeId] || s.desc;
   const proj = sysproject[activeId] || {};
   const hasFT = !!proj.ft;
   const hasProto = !!proj.proto;
   const { all: allConns } = getConnected(activeId);
 
+  const FT_LINKS = {
+    reyestr:   'https://docs.google.com/document/d/13hZEykvjYoA3f8qcRnnfF71E5od8UQitxWb20ldBgVk/edit?tab=t.w6zj5iuomssj',
+    toll:      'https://docs.google.com/document/d/1MbzRXHVd3EdCDcRXCQYJWo4ei63Y2r_2X1pA8jWLdbk/edit?pli=1&tab=t.w6zj5iuomssj',
+    neqliyyat: 'https://docs.google.com/document/d/1kQr3MAU3JDKM-ycgkDQqHbkYDOvWLKVG7-7WbdMpV-k/edit?tab=t.w6zj5iuomssj',
+  };
+
   function handleFtClick() {
-    if (hasFT) {
+    if (!hasFT) return;
+    if (FT_LINKS[activeId]) {
+      window.open(FT_LINKS[activeId], '_blank');
+    } else {
       alert(`Funksional Tələblər\nBaşlanma: ${proj.ft || '—'}\nSon tarix: ${proj.ftDeadline || '—'}`);
     }
   }
@@ -50,6 +66,8 @@ export default function InfoPanel({ activeId, onSelectSystem, sysproject, onSave
   function openAxin() {
     if (activeId === 'reyestr') {
       window.open('/reyestr-axin.html', '_blank');
+    } else if (activeId === 'toll') {
+      window.open('/toll-axin.html', '_blank');
     } else {
       onSelectSystem(activeId);
     }
@@ -64,7 +82,11 @@ export default function InfoPanel({ activeId, onSelectSystem, sysproject, onSave
             <span style={{ color: '#999', fontWeight: 700, fontSize: 13, marginRight: 6 }}>#{s.num}</span>
             {s.label}
           </strong>
-          <div className="info-logo-slot" />
+          <div className="info-logo-slot">
+            {LOGOS[activeId] && (
+              <img src={LOGOS[activeId]} alt="" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: 4 }} />
+            )}
+          </div>
         </div>
 
         <div className="info-desc">{sysDesc}</div>
@@ -91,7 +113,7 @@ export default function InfoPanel({ activeId, onSelectSystem, sysproject, onSave
                   key={cs.id}
                   className="info-conn-chip"
                   style={{ background: cc.fill, borderColor: cc.stroke, color: cc.text }}
-                  onClick={(e) => { e.stopPropagation(); onSelectSystem(cs.id); }}
+                  onClick={(e) => { e.stopPropagation(); setConnExpanded(true); onSelectSystem(cs.id); }}
                 >
                   {cs.lines[0]}
                 </span>
@@ -148,23 +170,27 @@ export default function InfoPanel({ activeId, onSelectSystem, sysproject, onSave
           <b style={{ color: hasFT ? '#047857' : '#aaa' }}>{hasFT ? 'Aktiv' : 'Yoxdur'}</b>
         </div>
 
-        <button
-          className={`is-ft-btn${hasFT ? ' ft-on' : ' ft-off'}`}
-          onClick={hasFT ? handleFtClick : undefined}
-          disabled={!hasFT}
-        >
-          📋 Funksional tələb
-        </button>
+        {!isTech && (
+          <button
+            className={`is-ft-btn${hasFT ? ' ft-on' : ' ft-off'}`}
+            onClick={hasFT ? handleFtClick : undefined}
+            disabled={!hasFT}
+          >
+            📋 Funksional tələb
+          </button>
+        )}
 
-        <button
-          className="is-nav"
-          style={{ opacity: hasProto ? 1 : 0.45, cursor: hasProto ? 'pointer' : 'default' }}
-          onClick={hasProto ? () => window.open(proj.proto) : undefined}
-        >
-          ⧉ Prototip
-        </button>
+        {!isTech && (
+          <button
+            className="is-nav"
+            style={{ opacity: hasProto ? 1 : 0.45, cursor: hasProto ? 'pointer' : 'default' }}
+            onClick={hasProto ? () => window.open(proj.proto) : undefined}
+          >
+            ⧉ Prototip
+          </button>
+        )}
 
-        <button
+        {!isTech && <button
           className="is-nav axin-btn"
           style={activeId === 'reyestr'
             ? { borderColor: '#A855C8', background: '#F8F0FF', color: '#5C2475' }
@@ -184,7 +210,7 @@ export default function InfoPanel({ activeId, onSelectSystem, sysproject, onSave
             <line x1="10.6" y1="10.6" x2="7.6" y2="7.6" stroke="currentColor" strokeWidth="1.1" />
           </svg>
           Axın
-        </button>
+        </button>}
       </div>
     </div>
   );
