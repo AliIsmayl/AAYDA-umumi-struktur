@@ -115,18 +115,6 @@ export default function NodeGroup({ sys, pos, isActive, isConnected, isHovered, 
         </text>
       ))}
 
-      {/* Status icon background */}
-      {hasStatus && (
-        <rect
-          x={bgX}
-          y={bgY}
-          width={bgW}
-          height={bgH}
-          rx="1"
-          fill="#fff"
-          opacity="0.92"
-        />
-      )}
 
       {/* gg — two green checkmarks */}
       {tkStr === 'gg' && (
