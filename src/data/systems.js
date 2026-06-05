@@ -69,9 +69,14 @@ export const systems = [
     label: 'Sətəm — Sağlamlıq, Əməyin Təhlükəsizliyi və Ətraf Mühitin Mühafizəsi',
     desc: 'Sağlamlıq, Əməyin Təhlükəsizliyi və Ətraf Mühitin Mühafizəsi sistemi.' },
 
-  { id: 'reyestr',    num: 16, lines: ['Yol Reyestri', 'Aktivlərin İdarəedilməsi'],   color: 'reg',     x: X.reg,         y: 256,
+  { id: 'reyestr',    num: 16, lines: ['Yol Reyestri', 'Aktivlərin İdarəedilməsi'],   color: 'reg',     x: X.reg,         y: 220,
     label: 'Yol Reyestri və Aktivlərin İdarəedilməsi Sistemi',
     desc: 'Yollar, seqmentlər, infrastruktur aktivlər üzrə GİS, hüquqi, texniki məlumatların vahid model əsasında mərkəzi qeydiyyatı.' },
+
+  { id: 'gis',        num: 37, lines: ['GIS'],                                         color: 'reg',     x: X.reg,         y: 294,
+    url: 'https://osm.md7.info/',
+    label: 'GIS — Coğrafi İnformasiya Sistemi',
+    desc: 'Coğrafi İnformasiya Sistemi. Yol infrastrukturu aktivlərinin məkan əsaslı uçotu, vizuallaşdırılması və təhlili üçün platforma.' },
 
   { id: 'toll',       num: 17, lines: ['Ödənişli Yollar', 'Əməliyyat Platforması'],   color: 'ops',     x: X.ops,         y: 72,
     label: 'Ödənişli Yollar üzrə Mərkəzi Əməliyyat Platforması',

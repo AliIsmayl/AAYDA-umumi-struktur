@@ -21,7 +21,7 @@ export default function ZoneBackgrounds({ visible }) {
         fontWeight="700" fill="#E05A2B" letterSpacing="1">KORPORATİV İDARƏETMƏ</text>
 
       {/* Registry zone */}
-      <rect x="392" y="12" width="175" height="470" rx="14"
+      <rect x="392" y="12" width="175" height="338" rx="14"
         fill="#F8F0FF" stroke="#A855C8" strokeWidth="1" strokeDasharray="5,4" />
       <text x="479" y="32" textAnchor="middle" fontSize="10"
         fontWeight="700" fill="#A855C8" letterSpacing="1">REYESTR</text>

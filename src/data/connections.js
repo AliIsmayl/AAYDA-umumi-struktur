@@ -39,6 +39,9 @@ export const connections = [
   { from: 'halga', to: 'task',   type: 'corp2ops' },
   { from: 'halga', to: 'mygov',  type: 'citizen'  },
 
+  // ─── GIS → connections ────────────────────────────────────────────────────
+  { from: 'gis', to: 'reyestr', type: 'reg2corp' },
+
   // ─── Yol Reyestri → connections ───────────────────────────────────────────
   ...links('reyestr', OPS,       'reg2ops'),
   { from: 'reyestr', to: 'esened', type: 'reg2corp' },

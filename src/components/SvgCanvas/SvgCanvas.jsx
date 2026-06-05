@@ -146,6 +146,7 @@ export default function SvgCanvas({ view, activeId, hoveredId, onSelectSystem, o
                 onMouseLeave={(e) => { e.stopPropagation(); if (!activeId) onHoverEnd(); }}
                 onClick={(e) => {
                   e.stopPropagation();
+                  if (sys.url) { window.open(sys.url, '_blank'); return; }
                   if (activeId === sys.id) onResetAll();
                   else onSelectSystem(sys.id);
                 }}
