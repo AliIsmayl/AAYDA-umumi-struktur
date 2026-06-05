@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import ConnectionsPanel from '../ConnectionsPanel/ConnectionsPanel.jsx';
 import StatusPanel from '../StatusPanel/StatusPanel.jsx';
+import PriorityPanel from '../PriorityPanel/PriorityPanel.jsx';
 import './TopBar.scss';
 
 export default function TopBar({ view, onChangeView, onSelectSystem, showConnectBtn, onConnectDB }) {
@@ -46,6 +47,12 @@ export default function TopBar({ view, onChangeView, onSelectSystem, showConnect
         >
           Status <span className="cs-arr">▾</span>
         </button>
+        <button
+          className={`cs-toggle${openPanel === 'priority' ? ' open' : ''}`}
+          onClick={() => togglePanel('priority')}
+        >
+          Prioritetləşmə <span className="cs-arr">▾</span>
+        </button>
 
         {showConnectBtn && (
           <button className="vbtn db-btn" onClick={onConnectDB}>
@@ -57,6 +64,10 @@ export default function TopBar({ view, onChangeView, onSelectSystem, showConnect
       <ConnectionsPanel open={openPanel === 'conns'} />
       <StatusPanel
         open={openPanel === 'ticks'}
+        onSelectSystem={onSelectSystem}
+      />
+      <PriorityPanel
+        open={openPanel === 'priority'}
         onSelectSystem={onSelectSystem}
       />
     </div>

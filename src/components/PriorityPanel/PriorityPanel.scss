@@ -1,0 +1,48 @@
+@use '../../variables' as *;
+
+.priority-cs-panel {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  justify-content: flex-start;
+}
+
+.pr-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  width: 100%;
+}
+
+.pr-badge {
+  font-size: 10px;
+  font-weight: 800;
+  color: #aaa;
+  background: $color-bg-light;
+  border: 1.5px solid $color-border;
+  border-radius: 5px;
+  padding: 3px 7px;
+  min-width: 20px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.pr-item {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #333;
+  background: #fff;
+  border: 1.5px solid $color-border;
+  border-radius: 6px;
+  padding: 4px 11px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.1s, border-color 0.1s, color 0.1s;
+
+  &:hover {
+    background: $color-primary-light;
+    border-color: $color-primary;
+    color: $color-primary-dark;
+  }
+}
