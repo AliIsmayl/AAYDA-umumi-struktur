@@ -189,13 +189,13 @@ export default function InfoPanel({ activeId, onSelectSystem, sysproject, onSave
           </button>
         )}
 
-        {!isTech && <button
+        {(activeId === 'reyestr' || activeId === 'toll') && <button
           className="is-nav axin-btn"
           style={activeId === 'reyestr'
             ? { borderColor: '#A855C8', background: '#F8F0FF', color: '#5C2475' }
             : {}}
           onClick={openAxin}
-          title={activeId === 'reyestr' ? 'Yol Reyestri axınını yeni tabda aç' : 'Əlaqə xətlərini göstər'}
+          title={activeId === 'reyestr' ? 'Yol Reyestri axınını yeni tabda aç' : 'Ödənişli Yollar axınını yeni tabda aç'}
         >
           <svg width="13" height="13" viewBox="0 0 13 13" fill="none" style={{ display: 'block' }}>
             <circle cx="6.5" cy="6.5" r="1.4" stroke="currentColor" strokeWidth="1.2" />
