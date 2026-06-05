@@ -42,6 +42,7 @@ export default function InfoPanel({ activeId, onSelectSystem, sysproject, onSave
   const TECH_IDS = ['api', 'bi', 'dw', 'notify', 'storage', 'mobile'];
   const isTech = TECH_IDS.includes(activeId);
   const LOGOS = { evisit: '/logos/evisit-logo.svg', halga: '/logos/halga-logo.svg' };
+  const logoSrc = LOGOS[activeId] || '/logos/default-logo.svg';
   const sysDesc = SYSDESC[activeId] || s.desc;
   const proj = sysproject[activeId] || {};
   const hasFT = !!proj.ft;
@@ -83,9 +84,7 @@ export default function InfoPanel({ activeId, onSelectSystem, sysproject, onSave
             {s.label}
           </strong>
           <div className="info-logo-slot">
-            {LOGOS[activeId] && (
-              <img src={LOGOS[activeId]} alt="" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: 4 }} />
-            )}
+            <img src={logoSrc} alt="" style={{ width: '100%', height: '100%', objectFit: 'contain', padding: 4 }} />
           </div>
         </div>
 
@@ -133,7 +132,7 @@ export default function InfoPanel({ activeId, onSelectSystem, sysproject, onSave
             className="is-date-input"
             placeholder="—"
             readOnly
-            defaultValue={proj.start || ''}
+            defaultValue={proj.start || '-'}
           />
         </div>
         <div className="is-row">
@@ -143,7 +142,7 @@ export default function InfoPanel({ activeId, onSelectSystem, sysproject, onSave
             className="is-date-input"
             placeholder="—"
             readOnly
-            defaultValue={proj.deadline || ''}
+            defaultValue={proj.deadline || '-'}
           />
         </div>
         <div className="is-row">
@@ -153,7 +152,7 @@ export default function InfoPanel({ activeId, onSelectSystem, sysproject, onSave
             className="is-date-input"
             placeholder="—"
             readOnly
-            defaultValue={proj.ftDeadline || ''}
+            defaultValue={proj.ftDeadline || '-'}
           />
         </div>
       </div>

@@ -9,8 +9,9 @@ const TICK_ITEMS = [
     tick: 'gg',
     icon: (
       <span className="tick-icon">
-        <svg width="16" height="14" viewBox="0 0 16 14" fill="none">
-          <path d="M2 7L5.5 11L14 2.5" stroke={TICK_GREEN} strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+        <svg width="28" height="14" viewBox="0 0 28 14" fill="none">
+          <path d="M1 7L4.5 11L13 2.5"     stroke={TICK_GREEN} strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M14.5 7L18 11L26.5 2.5" stroke={TICK_GREEN} strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </span>
     ),
@@ -19,9 +20,8 @@ const TICK_ITEMS = [
     tick: 'gb',
     icon: (
       <span className="tick-icon">
-        <svg width="28" height="14" viewBox="0 0 28 14" fill="none">
-          <path d="M1 7L4.5 11L13 2.5"     stroke={TICK_GREEN} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M14.5 7L18 11L26.5 2.5" stroke={TICK_GREY}  strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <svg width="16" height="14" viewBox="0 0 16 14" fill="none">
+          <path d="M2 7L5.5 11L14 2.5" stroke={TICK_GREEN} strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </span>
     ),
@@ -30,10 +30,10 @@ const TICK_ITEMS = [
     tick: 'bb',
     icon: (
       <span className="tick-icon">
-        <svg width="14" height="16" viewBox="0 0 14 16" fill="none">
-          <path d="M1.5 1.5H8.5L12.5 5.5V14.5H1.5V1.5Z" stroke="#6B7280" strokeWidth="1.5" strokeLinejoin="round" />
-          <path d="M8.5 1.5V5.5H12.5"                    stroke="#6B7280" strokeWidth="1.5" strokeLinejoin="round" />
-          <path d="M3.5 8H10.5M3.5 10.5H10.5M3.5 13H7.5" stroke="#6B7280" strokeWidth="1.2" strokeLinecap="round" />
+        <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+          <path d="M1.5 1H7L11 4.5V13H1.5Z"              stroke="#6B7280" strokeWidth="1.4" strokeLinejoin="round" />
+          <path d="M7 1V4.5H11"                           stroke="#6B7280" strokeWidth="1.4" strokeLinejoin="round" />
+          <path d="M3 7H9.5M3 9.5H9.5M3 12H6.5"          stroke="#6B7280" strokeWidth="1.1" strokeLinecap="round" />
         </svg>
       </span>
     ),
@@ -42,9 +42,9 @@ const TICK_ITEMS = [
     tick: 'b',
     icon: (
       <span className="tick-icon">
-        <svg width="14" height="16" viewBox="0 0 14 16" fill="none">
-          <rect x="1.5" y="2"   width="4" height="12" rx="1.5" fill="#6B7280" />
-          <rect x="8.5" y="2"   width="4" height="12" rx="1.5" fill="#6B7280" />
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <rect x="1.5" y="1.5" width="4" height="11" rx="1.5" fill="#6B7280" />
+          <rect x="8.5" y="1.5" width="4" height="11" rx="1.5" fill="#6B7280" />
         </svg>
       </span>
     ),

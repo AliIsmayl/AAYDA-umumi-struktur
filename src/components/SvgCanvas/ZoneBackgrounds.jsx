@@ -15,7 +15,7 @@ export default function ZoneBackgrounds({ visible }) {
         fontWeight="700" fill="#16A97A" letterSpacing="1">TEXNOLOJI PLATFORMA</text>
 
       {/* Corporate zone */}
-      <rect x="203" y="12" width="175" height="582" rx="14"
+      <rect x="203" y="12" width="175" height="682" rx="14"
         fill="#FEF3EE" stroke="#E05A2B" strokeWidth="1" strokeDasharray="5,4" />
       <text x="290" y="32" textAnchor="middle" fontSize="10"
         fontWeight="700" fill="#E05A2B" letterSpacing="1">KORPORATİV İDARƏETMƏ</text>
@@ -27,13 +27,13 @@ export default function ZoneBackgrounds({ visible }) {
         fontWeight="700" fill="#A855C8" letterSpacing="1">REYESTR</text>
 
       {/* Operations zone */}
-      <rect x="581" y="12" width="430" height="470" rx="14"
+      <rect x="581" y="12" width="430" height="514" rx="14"
         fill="#FEFBEE" stroke="#D4960A" strokeWidth="1" strokeDasharray="5,4" />
       <text x="796" y="32" textAnchor="middle" fontSize="10"
         fontWeight="700" fill="#D4960A" letterSpacing="1">ƏMƏLİYYAT SİSTEMLƏRİ</text>
 
       {/* Citizen zone */}
-      <rect x="1025" y="12" width="262" height="470" rx="14"
+      <rect x="1025" y="12" width="262" height="436" rx="14"
         fill="#EEF6FF" stroke="#2D8FE0" strokeWidth="1" strokeDasharray="5,4" />
       <text x="1156" y="32" textAnchor="middle" fontSize="10"
         fontWeight="700" fill="#2D8FE0" letterSpacing="1">VƏTƏNDAŞ İNTERFEYSİ</text>

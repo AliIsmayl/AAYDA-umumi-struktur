@@ -61,8 +61,8 @@ export default function SvgCanvas({ view, activeId, hoveredId, onSelectSystem, o
   }, [highlightId]);
 
   const svgWidth = 1300;
-  const svgHeight = isRadial ? 1260 : 630;
-  const viewBox = isRadial ? '0 0 1300 1260' : '0 0 1300 630';
+  const svgHeight = isRadial ? 1260 : 710;
+  const viewBox = isRadial ? '0 0 1300 1260' : '0 0 1300 710';
 
   // Radial rings
   const ringData = [

@@ -32,4 +32,5 @@ export const SYSDESC = {
   mehdudat: "Avtomobil yollarında tətbiq olunan müvəqqəti hərəkət məhdudiyyətləri, bağlanmalar, alternativ hərəkət istiqamətləri, fövqəladə hallar və digər operativ yol vəziyyəti barədə məlumatların vətəndaşlara açıq şəkildə təqdim olunmasını təmin edən komponentdir.",
   chatbot: "Agentliyin xidmətləri, avtomobil yolları, müraciət prosedurları, açıq məlumatlar və ümumi istifadə üçün nəzərdə tutulmuş digər mövzular üzrə vətəndaşların suallarını cavablandıran süni intellekt əsaslı informasiya komponentidir.",
   odenis: "Ödənişli avtomobil yollarından istifadə üzrə onlayn ödəniş imkanının təmin edilməsi məqsədilə proqram interfeysi (API) əsaslı inteqrasiya xidməti təqdim olunur. Xidmət vasitəsilə Birbank, m10, ABB mobile, AzParking və digər analoji mobil tətbiqlər ödəniş məbləğinin hesablanmasını və elektron ödəniş əməliyyatının həyata keçirilməsini təmin edirlər.",
+  sitem: "Sağlamlıq, Əməyin Təhlükəsizliyi və Ətraf Mühitin Mühafizəsi sistemi.",
 };

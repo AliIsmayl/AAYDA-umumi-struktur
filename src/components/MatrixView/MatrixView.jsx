@@ -20,14 +20,14 @@ function getConnData(sid) {
 
 function TickIcon({ tkStr }) {
   if (tkStr === 'gg') return (
-    <svg width="13" height="12" viewBox="0 0 13 12" fill="none">
-      <path d="M1.5 6L4.5 9.5L11.5 1.5" stroke={TICK_GREEN} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <svg width="24" height="12" viewBox="0 0 24 12" fill="none">
+      <path d="M1 6L4 9.5L11 1.5"  stroke={TICK_GREEN} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M13 6L16 9.5L23 1.5" stroke={TICK_GREEN} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
   if (tkStr === 'gb') return (
-    <svg width="24" height="12" viewBox="0 0 24 12" fill="none">
-      <path d="M1 6L4 9.5L11 1.5"  stroke={TICK_GREEN} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M13 6L16 9.5L23 1.5" stroke={TICK_GREY}  strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+    <svg width="13" height="12" viewBox="0 0 13 12" fill="none">
+      <path d="M1.5 6L4.5 9.5L11.5 1.5" stroke={TICK_GREEN} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
   if (tkStr === 'bb') return (

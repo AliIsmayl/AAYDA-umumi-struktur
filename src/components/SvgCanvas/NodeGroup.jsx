@@ -39,7 +39,7 @@ export default function NodeGroup({ sys, pos, isActive, isConnected, isHovered, 
   // Status icon positioning (top-right corner) — declared before startY to use hasStatus offset
   const tkStr = SYS_TICK[id];
   const hasStatus = tkStr && tkStr !== '0';
-  const bgW = (tkStr === 'gb' || tkStr === 'gg' || tkStr === 'bb') ? 30 : 20;
+  const bgW = (tkStr === 'gg') ? 30 : (tkStr === 'bb') ? 14 : 20;
   const bgH = 11;
   const bgX = p.x + w / 2 - bgW - 4;
   const bgY = p.y - h / 2 + 2;
@@ -150,46 +150,32 @@ export default function NodeGroup({ sys, pos, isActive, isConnected, isHovered, 
         </g>
       )}
 
-      {/* gb — two green checkmarks */}
+      {/* gb — one green checkmark */}
       {tkStr === 'gb' && (
-        <g>
-          <path
-            d={`M${bgX + 4},${bgY + 7.5} l2.5,2.5 L${bgX + 11},${bgY + 3}`}
-            stroke={TICK_GREEN}
-            strokeWidth="1.6"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            fill="none"
-          />
-          <path
-            d={`M${bgX + 18},${bgY + 7.5} l2.5,2.5 L${bgX + 25},${bgY + 3}`}
-            stroke={TICK_GREEN}
-            strokeWidth="1.6"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            fill="none"
-          />
-        </g>
+        <path
+          d={`M${bgX + 3},${bgY + 7.5} l3,2.5 L${bgX + 15},${bgY + 3}`}
+          stroke={TICK_GREEN}
+          strokeWidth="1.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          fill="none"
+        />
       )}
 
-      {/* bb — two grey checkmarks */}
+      {/* bb — document icon */}
       {tkStr === 'bb' && (
-        <g>
+        <g fill="none">
           <path
-            d={`M${bgX + 4},${bgY + 7.5} l2.5,2.5 L${bgX + 11},${bgY + 3}`}
-            stroke={TICK_GREY}
-            strokeWidth="1.6"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            fill="none"
+            d={`M${bgX + 1.5},${bgY + 0.5} H${bgX + 8.5} L${bgX + 12.5},${bgY + 4} V${bgY + 10.5} H${bgX + 1.5} Z`}
+            stroke={TICK_GREY} strokeWidth="1.2" strokeLinejoin="round"
           />
           <path
-            d={`M${bgX + 18},${bgY + 7.5} l2.5,2.5 L${bgX + 25},${bgY + 3}`}
-            stroke={TICK_GREY}
-            strokeWidth="1.6"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            fill="none"
+            d={`M${bgX + 8.5},${bgY + 0.5} V${bgY + 4} H${bgX + 12.5}`}
+            stroke={TICK_GREY} strokeWidth="1.2" strokeLinejoin="round"
+          />
+          <path
+            d={`M${bgX + 3},${bgY + 6} H${bgX + 11} M${bgX + 3},${bgY + 8} H${bgX + 11}`}
+            stroke={TICK_GREY} strokeWidth="1" strokeLinecap="round"
           />
         </g>
       )}

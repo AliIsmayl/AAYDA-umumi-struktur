@@ -29,119 +29,119 @@ export const systems = [
     label: 'Mobil Sahə Əməliyyatları Platforması',
     desc: 'Sahə əməkdaşlarının mobil cihazla məlumat toplaması, tapşırıq icrası, real vaxt sinxronizasiyası.' },
 
-  { id: 'esened',     num: 8,  lines: ['eSənəd'],                                      color: 'corp',    x: X.corp,        y: 58,
+  { id: 'esened',     num: 8,  lines: ['eSənəd'],                                      color: 'corp',    x: X.corp,        y: 72,
     label: 'eSənəd — Elektron Sənəd Dövriyyəsi Sistemi',
     desc: 'Rəsmi sənədlərin yaradılması, razılaşdırılması, elektron imzalanması, dövriyyəsi və arxivləşdirilməsi.' },
 
-  { id: 'halga',      num: 9,  lines: ['halga', '(CRM / Müraciət / Çağrı)'],         color: 'corp',    x: X.corp,        y: 112,
+  { id: 'halga',      num: 9,  lines: ['halga', '(CRM / Müraciət / Çağrı)'],         color: 'corp',    x: X.corp,        y: 136,
     label: 'halga — Vətəndaş Müraciətləri, CRM və Çağrı Mərkəzi',
     desc: 'Vətəndaş müraciətlərinin qəbulu, qeydiyyatı, çağrı mərkəzi funksionallığı ilə genişləndirilmiş CRM sistemi.' },
 
-  { id: 'task',       num: 10, lines: ['Tapşırıqların', 'İdarəetmə (TİS)'],           color: 'corp',    x: X.corp,        y: 166,
+  { id: 'task',       num: 10, lines: ['Tapşırıqların', 'İdarəetmə (TİS)'],           color: 'corp',    x: X.corp,        y: 200,
     label: 'Tapşırıqların İdarəetmə Sistemi (TİS)',
     desc: 'Tapşırıqların planlaşdırılması, məsul şəxslərə yönləndirilməsi, icra statuslarının izlənməsi.' },
 
-  { id: 'hr',         num: 11, lines: ['İnsan Resursları', 'Sistemi'],                 color: 'corp',    x: X.corp,        y: 220,
+  { id: 'hr',         num: 11, lines: ['İnsan Resursları', 'Sistemi'],                 color: 'corp',    x: X.corp,        y: 264,
     label: 'İnsan Resursları Sistemi',
     desc: 'Kadr məlumatları, əmək münasibətləri, işçi heyəti planlaşdırılması və performans izlənməsi.' },
 
-  { id: 'arxiv',      num: 12, lines: ['Elektron Arxiv', 'Sənəd İdarəetmə'],          color: 'corp',    x: X.corp,        y: 274,
+  { id: 'arxiv',      num: 12, lines: ['Elektron Arxiv', 'Sənəd İdarəetmə'],          color: 'corp',    x: X.corp,        y: 328,
     label: 'Elektron Arxiv və Sənəd İntellektual İdarəetmə Sistemi',
     desc: 'Sənədlərin rəqəmsallaşdırılması, OCR tanıması, avtomatik kateqoriyalaşdırma, semantik axtarış.' },
 
-  { id: 'vasite',     num: 13, lines: ['Əsas Vəsaitlər', 'və Anbar Sistemi'],        color: 'corp',    x: X.corp,        y: 328,
+  { id: 'vasite',     num: 13, lines: ['Əsas Vəsaitlər', 'və Anbar Sistemi'],        color: 'corp',    x: X.corp,        y: 392,
     label: 'Əsas Vəsaitlərin və Anbarın İdarəetmə Sistemi',
     desc: 'Avadanlıqlar, materiallar, ehtiyat hissələri: qeydiyyat, anbar yerləşdirməsi, qalıqların real vaxt izlənməsi.' },
 
-  { id: 'budce',      num: 14, lines: ['Büdcə', 'İnvestisiya Planlaşdırma'],          color: 'corp',    x: X.corp,        y: 382,
+  { id: 'budce',      num: 14, lines: ['Büdcə', 'İnvestisiya Planlaşdırma'],          color: 'corp',    x: X.corp,        y: 456,
     label: 'Büdcə və İnvestisiya Planlaşdırma Sistemi',
     desc: 'İnvestisiya əsaslandırması, layihə prioritetləşdirilməsi, büdcə bölgüsü, maliyyə planlaşdırması.' },
 
-  { id: 'audit',      num: 15, lines: ['Audit', 'Uyğunluq Nəzarəti'],                 color: 'corp',    x: X.corp,        y: 436,
+  { id: 'audit',      num: 15, lines: ['Audit', 'Uyğunluq Nəzarəti'],                 color: 'corp',    x: X.corp,        y: 520,
     label: 'Audit və Uyğunluq Nəzarəti Sistemi',
     desc: 'Daxili nəzarət, audit yoxlamaları, normativ tələblərə uyğunluq qiymətləndirməsi, pozuntuların izlənməsi.' },
 
-  { id: 'evisit',     num: 34, lines: ['eVisit'],                                      color: 'corp',    x: X.corp,        y: 490,
+  { id: 'evisit',     num: 34, lines: ['eVisit'],                                      color: 'corp',    x: X.corp,        y: 584,
     label: 'eVisit — Elektron Yoxlama və Giriş Sistemi',
     desc: 'Obyektlərə elektron giriş nəzarəti, ziyarətçi qeydiyyatı, sahə yoxlamalarının planlaşdırılması və nəticələrin izlənməsi.' },
 
-  { id: 'sitem',      num: 35, lines: ['Sitem'],                                       color: 'corp',    x: X.corp,        y: 544,
-    label: 'Sitem — Sistem İdarəetmə Modulu',
-    desc: 'Korporativ sistemlərin inteqrasiyası, idarəetmə proseslərinin avtomatlaşdırılması, sistem resurslarının mərkəzləşdirilmiş monitorinqi.' },
+  { id: 'sitem',      num: 35, lines: ['SƏTƏM'],                                       color: 'corp',    x: X.corp,        y: 648,
+    label: 'Sətəm — Sağlamlıq, Əməyin Təhlükəsizliyi və Ətraf Mühitin Mühafizəsi',
+    desc: 'Sağlamlıq, Əməyin Təhlükəsizliyi və Ətraf Mühitin Mühafizəsi sistemi.' },
 
   { id: 'reyestr',    num: 16, lines: ['Yol Reyestri', 'Aktivlərin İdarəedilməsi'],   color: 'reg',     x: X.reg,         y: 256,
     label: 'Yol Reyestri və Aktivlərin İdarəedilməsi Sistemi',
     desc: 'Yollar, seqmentlər, infrastruktur aktivlər üzrə GİS, hüquqi, texniki məlumatların vahid model əsasında mərkəzi qeydiyyatı.' },
 
-  { id: 'toll',       num: 17, lines: ['Ödənişli Yollar', 'Əməliyyat Platforması'],   color: 'ops',     x: X.ops,         y: 60,
+  { id: 'toll',       num: 17, lines: ['Ödənişli Yollar', 'Əməliyyat Platforması'],   color: 'ops',     x: X.ops,         y: 72,
     label: 'Ödənişli Yollar üzrə Mərkəzi Əməliyyat Platforması',
     desc: 'Tariflər, keçid əməliyyatları, ANPR/LPR kameralar, RFID/ETC, şlaqbaum, pozuntu aşkarlanması, borc uçotu.' },
 
-  { id: 'neqliyyat',  num: 18, lines: ['Nəqliyyat', 'Mexanizmlər Sistemi'],           color: 'ops',     x: X.ops - 105,   y: 116,
+  { id: 'neqliyyat',  num: 18, lines: ['Nəqliyyat', 'Mexanizmlər Sistemi'],           color: 'ops',     x: X.ops - 105,   y: 140,
     label: 'Nəqliyyat və Mexanizmlərin İdarəetmə Sistemi',
     desc: 'Avtonəqliyyat, xüsusi texnika: GPS izlənmə, yanacaq sərfiyyatı, texniki vəziyyət, istifadə intensivliyi.' },
 
-  { id: 'tikinti',    num: 19, lines: ['Layihə Tikinti', 'Müqavilə Sistemi'],         color: 'ops',     x: X.ops + 105,   y: 116,
+  { id: 'tikinti',    num: 19, lines: ['Layihə Tikinti', 'Müqavilə Sistemi'],         color: 'ops',     x: X.ops + 105,   y: 140,
     label: 'Yol Layihə, Tikinti və Müqavilə İdarəetmə Sistemi',
     desc: 'Layihə planlaşdırması, tikinti idarəetməsi, müəllif/texniki nəzarət, podratçı seçimi, müqavilə icrası.' },
 
-  { id: 'monitorinq', num: 20, lines: ['Yol Monitorinq', 'və Diaqnostika'],           color: 'ops',     x: X.ops - 105,   y: 172,
+  { id: 'monitorinq', num: 20, lines: ['Yol Monitorinq', 'və Diaqnostika'],           color: 'ops',     x: X.ops - 105,   y: 208,
     label: 'Yol Monitorinq və Diaqnostika Platforması',
     desc: 'Sensorlar, IoT, tərəzilər, video müşahidə: real vaxt toplama, hadisə aşkarlama, texniki vəziyyət monitorinqi.' },
 
-  { id: 'istisman',   num: 21, lines: ['İstismar Təmir', 'Sahə Əməliyyatları'],       color: 'ops',     x: X.ops + 105,   y: 172,
+  { id: 'istisman',   num: 21, lines: ['İstismar Təmir', 'Sahə Əməliyyatları'],       color: 'ops',     x: X.ops + 105,   y: 208,
     label: 'Yol İstismar, Təmir və Sahə Əməliyyatları Sistemi',
     desc: 'Nasazlıq qeydiyyatı, prioritetləşdirmə, sahə briqadalarına yönləndirmə, icra nəticələrinin izlənməsi.' },
 
-  { id: 'tehlu',      num: 22, lines: ['Yol Təhlükəsizliyi', 'Trafik Analitika'],     color: 'ops',     x: X.ops - 105,   y: 228,
+  { id: 'tehlu',      num: 22, lines: ['Yol Təhlükəsizliyi', 'Trafik Analitika'],     color: 'ops',     x: X.ops - 105,   y: 276,
     label: 'Yol Təhlükəsizliyi və Trafik Analitika Sistemi',
     desc: 'Qəza məlumatları, trafik göstəriciləri, risklərin analizi, təhlükəli sahələrin müəyyənləşdirilməsi.' },
 
-  { id: 'icaze',      num: 23, lines: ['Ağır Nəqliyyat', 'İcazə Sistemi'],            color: 'ops',     x: X.ops + 105,   y: 228,
+  { id: 'icaze',      num: 23, lines: ['Ağır Nəqliyyat', 'İcazə Sistemi'],            color: 'ops',     x: X.ops + 105,   y: 276,
     label: 'Ağır və İriqabaritli Nəqliyyat İcazə Sistemi',
     desc: 'Normadan artıq çəkili nəqliyyat: marşrut uyğunluğu, yol aktivlərinə təsir analizi, icazə prosesi.' },
 
-  { id: 'komm',       num: 24, lines: ['Kommunikasiya', 'Keçidləri İcazə'],           color: 'ops',     x: X.ops - 105,   y: 284,
+  { id: 'komm',       num: 24, lines: ['Kommunikasiya', 'Keçidləri İcazə'],           color: 'ops',     x: X.ops - 105,   y: 344,
     label: 'Kommunikasiya Keçidləri və İcazə İdarəetmə Sistemi',
     desc: 'Yollar üzərindəki mühəndis kommunikasiya xətlərinin planlaşdırılması, razılaşdırılması, icazə verilməsi.' },
 
-  { id: 'yolknar',    num: 25, lines: ['Yolkənarı Xidmət', 'İnfrastrukturu'],        color: 'ops',     x: X.ops + 105,   y: 284,
+  { id: 'yolknar',    num: 25, lines: ['Yolkənarı Xidmət', 'İnfrastrukturu'],        color: 'ops',     x: X.ops + 105,   y: 344,
     label: 'Yolkənarı Xidmət İnfrastrukturu İdarəetmə Sistemi',
     desc: 'Dayanacaqlar, istirahət zonaları, xidmət sahələri: status, istifadə, inkişaf planları, birləşmə texniki şərtlər.' },
 
-  { id: 'torpaq',     num: 26, lines: ['Yol Torpaq Sahəsi', 'Hüquqi Nəzarət'],       color: 'ops',     x: X.ops - 105,   y: 340,
+  { id: 'torpaq',     num: 26, lines: ['Yol Torpaq Sahəsi', 'Hüquqi Nəzarət'],       color: 'ops',     x: X.ops - 105,   y: 412,
     label: 'Yol Torpaq Sahəsi və Hüquqi Nəzarət Modulu',
     desc: 'Yol torpaq sahələri GİS uçotu, qanunsuz tikililərin foto+geolokasiya ilə aşkarlanması, hüquqi tədbirlərin başlanması.' },
 
-  { id: 'ekologiya',  num: 27, lines: ['Yaşıllıq', 'Ekoloji İdarəetmə'],             color: 'ops',     x: X.ops + 105,   y: 340,
+  { id: 'ekologiya',  num: 27, lines: ['Yaşıllıq', 'Ekoloji İdarəetmə'],             color: 'ops',     x: X.ops + 105,   y: 412,
     label: 'Yaşıllıq və Ekoloji İdarəetmə Modulu',
     desc: 'Yaşıllıq zolaqları, qoruyucu meşə sahələri: məkan uçotu, yaşıllaşdırma planlaşdırma, bərpa-qulluq izlənməsi.' },
 
-  { id: 'primavera',  num: 36, lines: ['PRİMAVERA', 'Layihə İdarəetmə'],             color: 'ops',     x: X.ops,         y: 396,
+  { id: 'primavera',  num: 36, lines: ['PRİMAVERA', 'Layihə İdarəetmə'],             color: 'ops',     x: X.ops,         y: 480,
     label: 'PRİMAVERA — Layihə İdarəetmə Sistemi',
     desc: 'Oracle Primavera əsasında yol tikinti və təmir layihələrinin planlaşdırılması, resurs idarəetməsi, cədvəl izlənməsi.' },
 
-  { id: 'mygov',      num: 28, lines: ['myGOV', 'Vətəndaş Müraciətləri'],            color: 'citizen', x: X.citizen,     y: 60,
+  { id: 'mygov',      num: 28, lines: ['myGOV', 'Vətəndaş Müraciətləri'],            color: 'citizen', x: X.citizen,     y: 72,
     label: 'myGOV Vətəndaş Müraciətləri eXidməti',
     desc: 'myGOV platforması üzərindən vətəndaş müraciətlərinin qəbulu, İnteqrasiya Platforması vasitəsilə CRM sisteminə ötürülməsi.' },
 
-  { id: 'odenis',     num: 29, lines: ['Ödənişli Yollar', 'Onlayn Ödəniş'],          color: 'citizen', x: X.citizen,     y: 116,
+  { id: 'odenis',     num: 29, lines: ['Ödənişli Yollar', 'Onlayn Ödəniş'],          color: 'citizen', x: X.citizen,     y: 138,
     label: 'Ödənişli Yollar üzrə Onlayn Ödəniş Xidməti',
     desc: 'Birbank, m10, ABB mobile, AzParking vasitəsilə keçid haqqı hesablanması, elektron ödəniş.' },
 
-  { id: 'xerite',     num: 30, lines: ['İnteraktiv', 'Yol Xəritəsi'],                color: 'citizen', x: X.citizen,     y: 172,
+  { id: 'xerite',     num: 30, lines: ['İnteraktiv', 'Yol Xəritəsi'],                color: 'citizen', x: X.citizen,     y: 204,
     label: 'İctimai İnteraktiv Yol Xəritəsi',
     desc: 'Yol şəbəkəsi, kateqoriyalar, aktivlər, məhdudiyyət məlumatları: vətəndaşlar üçün interaktiv xəritə.' },
 
-  { id: 'mehdudat',   num: 31, lines: ['Yol Məhdudiyyətləri', 'Məlumat Lövhəsi'],    color: 'citizen', x: X.citizen,     y: 228,
+  { id: 'mehdudat',   num: 31, lines: ['Yol Məhdudiyyətləri', 'Məlumat Lövhəsi'],    color: 'citizen', x: X.citizen,     y: 270,
     label: 'Yol Məhdudiyyətləri və Operativ Məlumat Lövhəsi',
     desc: 'Müvəqqəti hərəkət məhdudiyyətləri, bağlanmalar, alternativ istiqamətlər — real vaxt.' },
 
-  { id: 'portal',     num: 32, lines: ['Açıq Məlumat', 'Hesabat Portalı'],           color: 'citizen', x: X.citizen,     y: 284,
+  { id: 'portal',     num: 32, lines: ['Açıq Məlumat', 'Hesabat Portalı'],           color: 'citizen', x: X.citizen,     y: 336,
     label: 'Açıq Məlumat və İctimai Hesabat Portalı',
     desc: 'Agentliyin açıq statistikası, layihə statusları, ictimai hesabatlar — inteqrasiya ilə yenilənən portal.' },
 
-  { id: 'chatbot',    num: 33, lines: ['Vətəndaş', 'AI Chatbot'],                    color: 'citizen', x: X.citizen,     y: 340,
+  { id: 'chatbot',    num: 33, lines: ['Vətəndaş', 'AI Chatbot'],                    color: 'citizen', x: X.citizen,     y: 402,
     label: 'Vətəndaş AI Chatbot',
     desc: 'Agentlik xidmətləri, yollar, müraciət prosedurları üzrə süni intellekt əsaslı informasiya komponenti.' },
 ];
