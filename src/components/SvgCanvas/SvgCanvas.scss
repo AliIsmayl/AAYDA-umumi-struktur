@@ -1,5 +1,15 @@
 @use '../../variables' as *;
 
+@keyframes alertBlink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.1; }
+}
+
+.node-alert {
+  animation: alertBlink 1s ease-in-out infinite;
+  pointer-events: none;
+}
+
 .canvas-wrap {
   background: transparent;
   border-radius: 0;

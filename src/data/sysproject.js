@@ -18,7 +18,7 @@ export const SYSPROJECT = {
   audit:      { start: null, deadline: null, ft: null, ftDeadline: null, proto: ''                               },
   reyestr:    { start: null, deadline: null, ft: '2026-06-05', ftDeadline: null, proto: 'https://yol-reyestri.netlify.app/' },
   toll:       { start: null, deadline: null, ft: null, ftDeadline: null, proto: ''                               },
-  neqliyyat:  { start: null, deadline: null, ft: null, ftDeadline: null, proto: ''                               },
+  neqliyyat:  { start: null, deadline: null, ft: '2026-06-11', ftDeadline: null, proto: ''                      },
   tikinti:    { start: null, deadline: null, ft: null, ftDeadline: null, proto: ''                               },
   monitorinq: { start: null, deadline: null, ft: null, ftDeadline: null, proto: ''                               },
   istisman:   { start: null, deadline: null, ft: null, ftDeadline: null, proto: ''                               },

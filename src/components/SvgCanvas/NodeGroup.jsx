@@ -1,6 +1,8 @@
 import { COLORS, NW, NH } from '../../data/constants.js';
 import { SYS_TICK, TICK_GREEN, TICK_GREY } from '../../data/ticks.js';
 
+const ALERT_NUMS = new Set([16, 37, 17, 18, 15, 11, 34]);
+
 export default function NodeGroup({ sys, pos, isActive, isConnected, isHovered, hasAnyActive, isRadial, onMouseEnter, onMouseLeave, onClick }) {
   const { id, lines, color } = sys;
   const cl = COLORS[color];
@@ -177,6 +179,17 @@ export default function NodeGroup({ sys, pos, isActive, isConnected, isHovered, 
           strokeLinecap="round"
           strokeLinejoin="round"
           fill="none"
+        />
+      )}
+
+      {/* Blinking red alert */}
+      {ALERT_NUMS.has(sys.num) && (
+        <circle
+          cx={p.x + w / 2 - 14}
+          cy={p.y + h / 2 - 10}
+          r="4"
+          fill="#EF4444"
+          className="node-alert"
         />
       )}
     </g>
